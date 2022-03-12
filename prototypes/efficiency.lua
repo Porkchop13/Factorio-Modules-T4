@@ -2,7 +2,12 @@ local container = {}
 
 -- [Item] --
 local item = table.deepcopy(data.raw["module"]["effectivity-module-3"])
-item.effect = {consumption = {bonus = -0.80}}
+item.effect = {
+    consumption = {
+        bonus = settings.startup["t4-modules-efficiency-item-effect-consumption"]
+            .value
+    }
+}
 item.icon = "__modules-t4__/graphics/icons/effectivity-module-4.png"
 item.name = "effectivity-module-4"
 item.order = "c[effectivity]-d[effectivity-module-4]"

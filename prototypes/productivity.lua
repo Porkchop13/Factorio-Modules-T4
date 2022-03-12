@@ -3,10 +3,22 @@ local container = {}
 -- [Item] --
 local item = table.deepcopy(data.raw["module"]["productivity-module-3"])
 item.effect = {
-    productivity = {bonus = 0.16},
-    consumption = {bonus = 1.00},
-    pollution = {bonus = 0.14},
-    speed = {bonus = -0.20}
+    productivity = {
+        bonus = settings.startup["t4-modules-productivity-item-effect-productivity"]
+            .value
+    },
+    consumption = {
+        bonus = settings.startup["t4-modules-productivity-item-effect-consumption"]
+            .value
+    },
+    pollution = {
+        bonus = settings.startup["t4-modules-productivity-item-effect-pollution"]
+            .value
+    },
+    speed = {
+        bonus = settings.startup["t4-modules-productivity-item-effect-speed"]
+            .value
+    }
 }
 item.icon = "__modules-t4__/graphics/icons/productivity-module-4.png"
 item.name = "productivity-module-4"
