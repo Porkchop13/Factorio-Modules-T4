@@ -1,4 +1,4 @@
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/Porkchop13/Factorio-Modules-T4?label=Release) 
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/Porkchop13/Factorio-Modules-T4?color=orange&label=Release)
 
 # Factorio Tier 4 Modules
 Factorio mod adding Tier 4 modules with configurable bonuses
