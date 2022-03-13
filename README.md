@@ -2,7 +2,7 @@
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Porkchop13/Factorio-Modules-T4/Lint?label=lint)
 ![GitHub](https://img.shields.io/github/license/Porkchop13/Factorio-Modules-T4)
 
-# Factorio Tier 4 Modules
+# Tier 4 Modules
 
 Factorio mod adding Tier 4 modules with configurable bonuses
 
