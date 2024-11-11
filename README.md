@@ -1,4 +1,4 @@
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/Porkchop13/Factorio-Modules-T4?label=release)
+![GitHub Release](https://img.shields.io/github/v/release/Porkchop13/Factorio-Modules-T4)
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Porkchop13/Factorio-Modules-T4/lint.yml?label=lint)
 ![GitHub](https://img.shields.io/github/license/Porkchop13/Factorio-Modules-T4)
 
