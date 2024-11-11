@@ -20,7 +20,7 @@ data:extend({
     {
         enabled = false,
         energy_required = 120,
-        ingredients = {{"effectivity-module-3", 6}, {"processing-unit", 10}},
+        ingredients = {{"effectivity-module-3", 5}, {"processing-unit", 10}},
         name = "effectivity-module-4",
         result = "effectivity-module-4",
         type = "recipe"

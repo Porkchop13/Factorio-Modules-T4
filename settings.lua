@@ -20,7 +20,7 @@ data:extend{
         setting_type = 'startup',
         type = 'double-setting',
         order = 'c[effectivity]-a[consumption]',
-        default_value = -0.8,
+        default_value = -0.6,
         minimum_value = -10,
         maximum_value = -0.5
     }, {
