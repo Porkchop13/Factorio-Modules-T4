@@ -1,11 +1,11 @@
 {
-    "name": "modules-t4",
-    "version": "1.0.2",
-    "title": "Tier 4 Modules",
-    "author": "Porkchop13",
-    "description": "Adds tier 4 modules with progression along the lines of the base game by default.",
-    "factorio_version": "2.0",
-    "dependencies": [
-        "base >= 2.0.15"
-    ]
+  "name": "modules-t4",
+  "version": "1.0.3",
+  "title": "Tier 4 Modules",
+  "author": "Porkchop13",
+  "description": "Adds tier 4 modules with progression along the lines of the base game by default.",
+  "factorio_version": "2.0",
+  "dependencies": [
+    "base >= 2.0.15"
+  ]
 }
