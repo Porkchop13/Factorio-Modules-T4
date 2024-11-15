@@ -1,16 +1,13 @@
 local container = {}
 
 -- [Item] --
-local item = table.deepcopy(data.raw["module"]["effectivity-module-3"])
+local item = table.deepcopy(data.raw["module"]["efficiency-module-3"])
 item.effect = {
-    consumption = {
-        bonus = settings.startup["t4-modules-efficiency-item-effect-consumption"]
-            .value
-    }
+    consumption = settings.startup["t4-modules-efficiency-item-effect-consumption"].value
 }
-item.icon = "__modules-t4__/graphics/icons/effectivity-module-4.png"
-item.name = "effectivity-module-4"
-item.order = "c[effectivity]-d[effectivity-module-4]"
+item.icon = "__modules-t4__/graphics/icons/efficiency-module-4.png"
+item.name = "efficiency-module-4"
+item.order = "c[efficiency]-d[efficiency-module-4]"
 item.tier = 4
 table.insert(container, item)
 data:extend(container)
@@ -20,9 +17,12 @@ data:extend({
     {
         enabled = false,
         energy_required = 120,
-        ingredients = {{"effectivity-module-3", 5}, {"processing-unit", 10}},
-        name = "effectivity-module-4",
-        result = "effectivity-module-4",
+        ingredients = {
+            {type= "item", name="efficiency-module-3", amount=5},
+            {type= "item", name="processing-unit", amount=10}
+        },
+        name = "efficiency-module-4",
+        results = {{type= "item", name="efficiency-module-4",amount=1}},
         type = "recipe"
     }
 })
@@ -30,12 +30,12 @@ data:extend({
 -- [Technology] --
 data:extend({
     {
-        effects = {{type = "unlock-recipe", recipe = "effectivity-module-4"}},
-        icon = "__modules-t4__/graphics/technology/effectivity-module-4.png",
+        effects = {{type = "unlock-recipe", recipe = "efficiency-module-4"}},
+        icon = "__modules-t4__/graphics/technology/efficiency-module-4.png",
         icon_size = 256,
-        name = "effectivity-module-4",
+        name = "efficiency-module-4",
         order = "i-g-d",
-        prerequisites = {"effectivity-module-3"},
+        prerequisites = {"efficiency-module-3"},
         type = "technology",
         unit = {
             count = 500,

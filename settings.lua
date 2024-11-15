@@ -19,7 +19,7 @@ data:extend{
         name = 't4-modules-efficiency-item-effect-consumption',
         setting_type = 'startup',
         type = 'double-setting',
-        order = 'c[effectivity]-a[consumption]',
+        order = 'c[efficiency]-a[consumption]',
         default_value = -0.6,
         minimum_value = -10,
         maximum_value = -0.5
