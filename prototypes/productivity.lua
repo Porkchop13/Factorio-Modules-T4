@@ -3,22 +3,10 @@ local container = {}
 -- [Item] --
 local item = table.deepcopy(data.raw["module"]["productivity-module-3"])
 item.effect = {
-    productivity = {
-        bonus = settings.startup["t4-modules-productivity-item-effect-productivity"]
-            .value
-    },
-    consumption = {
-        bonus = settings.startup["t4-modules-productivity-item-effect-consumption"]
-            .value
-    },
-    pollution = {
-        bonus = settings.startup["t4-modules-productivity-item-effect-pollution"]
-            .value
-    },
-    speed = {
-        bonus = settings.startup["t4-modules-productivity-item-effect-speed"]
-            .value
-    }
+    productivity = settings.startup["t4-modules-productivity-item-effect-productivity"].value,
+    consumption = settings.startup["t4-modules-productivity-item-effect-consumption"].value,
+    pollution = settings.startup["t4-modules-productivity-item-effect-pollution"].value,
+    speed = settings.startup["t4-modules-productivity-item-effect-speed"].value
 }
 item.icon = "__modules-t4__/graphics/icons/productivity-module-4.png"
 item.name = "productivity-module-4"
@@ -32,9 +20,12 @@ data:extend({
     {
         enabled = false,
         energy_required = 120,
-        ingredients = {{"productivity-module-3", 5}, {"processing-unit", 10}},
+        ingredients = {
+            {type= "item", name="productivity-module-3", amount=5},
+            {type= "item", name="processing-unit", amount=10}
+        },
         name = "productivity-module-4",
-        result = "productivity-module-4",
+        results = {{type= "item", name="productivity-module-4",amount=1}},
         type = "recipe"
     }
 })

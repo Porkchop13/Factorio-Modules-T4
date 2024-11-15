@@ -3,13 +3,8 @@ local container = {}
 -- [Item] --
 local item = table.deepcopy(data.raw["module"]["speed-module-3"])
 item.effect = {
-    speed = {
-        bonus = settings.startup["t4-modules-speed-item-effect-speed"].value
-    },
-    consumption = {
-        bonus = settings.startup["t4-modules-speed-item-effect-consumption"]
-            .value
-    }
+    speed = settings.startup["t4-modules-speed-item-effect-speed"].value,
+    consumption = settings.startup["t4-modules-speed-item-effect-consumption"].value
 }
 item.icon = "__modules-t4__/graphics/icons/speed-module-4.png"
 item.name = "speed-module-4"
@@ -23,9 +18,12 @@ data:extend({
     {
         enabled = false,
         energy_required = 120,
-        ingredients = {{"speed-module-3", 5}, {"processing-unit", 10}},
+        ingredients = {
+            {type= "item", name="speed-module-3", amount=5},
+            {type= "item", name="processing-unit", amount=10}
+        },
         name = "speed-module-4",
-        result = "speed-module-4",
+        results = {{type= "item", name="speed-module-4",amount=1}},
         type = "recipe"
     }
 })
