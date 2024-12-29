@@ -35,7 +35,6 @@ data:extend({
         icon = "__modules-t4__/graphics/technology/speed-module-4.png",
         icon_size = 256,
         name = "speed-module-4",
-        order = "i-c-d",
         prerequisites = {"speed-module-3"},
         type = "technology",
         unit = {

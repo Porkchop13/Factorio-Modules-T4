@@ -34,7 +34,6 @@ data:extend({
         icon = "__modules-t4__/graphics/technology/efficiency-module-4.png",
         icon_size = 256,
         name = "efficiency-module-4",
-        order = "i-g-d",
         prerequisites = {"efficiency-module-3"},
         type = "technology",
         unit = {
