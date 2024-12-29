@@ -1,3 +1,4 @@
+-- Default Setting --
 data:extend{
     {
         name = 't4-modules-speed-item-effect-consumption',
@@ -57,3 +58,18 @@ data:extend{
         maximum_value = 10
     }
 }
+
+-- Quality Settings --
+if mods["quality"] then
+    data:extend{
+        {
+            name = 't4-modules-speed-item-effect-quality',
+            setting_type = 'startup',
+            type = 'double-setting',
+            order = 'a[speed]-b[quality]',
+            default_value = -0.04,
+            minimum_value = -1,
+            maximum_value = -0.025
+        }
+    }
+end
