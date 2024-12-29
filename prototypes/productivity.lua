@@ -37,7 +37,6 @@ data:extend({
         icon = "__modules-t4__/graphics/technology/productivity-module-4.png",
         icon_size = 256,
         name = "productivity-module-4",
-        order = "i-e-d",
         prerequisites = {"productivity-module-3"},
         type = "technology",
         unit = {

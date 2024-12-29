@@ -11,7 +11,7 @@ data:extend{
         name = 't4-modules-speed-item-effect-speed',
         setting_type = 'startup',
         type = 'double-setting',
-        order = 'a[speed]-b[speed]',
+        order = 'a[speed]-c[speed]',
         default_value = 0.8,
         minimum_value = 0.5,
         maximum_value = 10
@@ -35,7 +35,7 @@ data:extend{
         name = 't4-modules-productivity-item-effect-speed',
         setting_type = 'startup',
         type = 'double-setting',
-        order = 'c[productivity]-b[speed]',
+        order = 'c[productivity]-d[speed]',
         default_value = -0.2,
         minimum_value = -10,
         maximum_value = -0.15
@@ -51,7 +51,7 @@ data:extend{
         name = 't4-modules-productivity-item-effect-pollution',
         setting_type = 'startup',
         type = 'double-setting',
-        order = 'c[productivity]-d[pollution]',
+        order = 'c[productivity]-b[pollution]',
         default_value = 0.14,
         minimum_value = 0.1,
         maximum_value = 10
