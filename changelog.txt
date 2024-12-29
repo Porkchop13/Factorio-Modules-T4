@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.1.0
+Date: 2024-12-29
+  Features:
+    - Add quality module 4
+    - Support quality for speed modules
+  Bugfixes:
+    - Fix sorting & efficiency module setting display
+---------------------------------------------------------------------------------------------------
 Version: 2.0.1
 Date: 2024-11-15
   Bugfixes:
