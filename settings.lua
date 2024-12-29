@@ -70,6 +70,22 @@ if mods["quality"] then
             default_value = -0.04,
             minimum_value = -1,
             maximum_value = -0.025
+        } , {
+            name = 't4-modules-quality-item-effect-quality',
+            setting_type = 'startup',
+            type = 'double-setting',
+            order = 'd[quality]-a[quality]',
+            default_value = .03,
+            minimum_value = .025,
+            maximum_value = 1
+        }, {
+            name = 't4-modules-quality-item-effect-speed',
+            setting_type = 'startup',
+            type = 'double-setting',
+            order = 'd[quality]-b[speed]',
+            default_value = -0.05,
+            minimum_value = -1,
+            maximum_value = -0.05
         }
     }
 end
